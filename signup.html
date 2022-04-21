@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/mall.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="clearfix">
+    <div class="login-title">
+        <a href="./index.html">[返回首页]</a>
+    </div>
+    <div class="login-box">
+        <div class="loginArea clearfix">
+            <div id="containersign" style="float: right;">
+                <div class="header">
+                    <p>注册</p>
+                </div>
+                <div class="form-body">
+                    <form action="demo.html">
+                        <div>
+                            <div class="text">
+                                <label for="">用户名</label>
+                                <input class="form-input" id="value" onfocus="shoeTips('unameyz','用户名长度不能小于六')"
+                                    onblur="hint_hide()" onkeyup="hint()" type="text" Name="Userame" placeholder="用户名"
+                                    style="margin-bottom: 6px;" />
+                            </div>
+                            <div class="yz" id="unameyz">&nbsp;</div>
+                            <div class="text">
+                                <label for="">密&nbsp;&nbsp码</label>
+                                <input class="form-input" id="pass_value" onfocus="shoeTips('upswdyz','密码长度不能小于六')"
+                                    onblur="pass_hide()" onkeyup="checkPass()" type="password" name="password"
+                                    placeholder="密码" style="margin-bottom: 6px;" />
+                            </div>
+                            <div class="yz" id="upswdyz">&nbsp;</div>
+                            <div class="text">
+                                <label for="">确认密码</label>
+                                <input class="form-input" id="passpass_value"
+                                    onfocus="shoeTips('agpwdyz','两次密码要一致')" onblur="passpass_hide()"
+                                    onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"
+                                    style="margin-bottom: 6px;" />
+                            </div>
+                            <div class="yz" id="agpwdyz">&nbsp;</div>
+                            <div class="text">
+                                <label for="">邮箱</label>
+                                <input class="form-input" id="email" onfocus="shoeTips('umailyz','邮箱格式要正确')"
+                                    onblur="emailHide()" onkeyup="emailCheck()" type="email" name="email"
+                                    placeholder="邮箱" style="margin-bottom: 6px;" />
+                            </div>
+                            <div class="yz" id="umailyz">&nbsp;</div>
+                            <div class="text">
+                                <label for="">手机号</label>
+                                <input class="form-input" id="phone" type="text"
+                                    onfocus="shoeTips('uphoneyz','格式为十一位数字的手机号')" onblur="phoneHide()"
+                                    onkeyup="phoneCheck()" Name="Phone" placeholder="手机号" style="margin-bottom: 6px;">
+                            </div>
+                            <div class="yz" id="uphoneyz">&nbsp;</div>
+                            <div class="btn-sign">
+                                <input type="button" value="提交" class="form-btn form-btn-primary" name="login" id="submits">
+                                <a href="./login.html"><input type="button" value="返回登录" class="form-btn form-btn-warning" name="login" id="logins"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="login-footer">
+                    <p>Copyright © 2022 BY Brisy 骚包美男 👧 辰辰想睡觉</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/signup.js"></script>
+</body>
+</html>
